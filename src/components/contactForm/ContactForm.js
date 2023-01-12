@@ -50,6 +50,7 @@ export const ContactForm = ({
         name='Phone Number'
         type='number'
         placeholder="Your phone number..."
+        pattern="[1-9][0-9]{2}-[1-9][0-9]{2}-[0-9]{4}"
       />    
 
       <button type="submit" >Submit</button> 

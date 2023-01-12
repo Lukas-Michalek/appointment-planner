@@ -7,14 +7,14 @@ export const TileList = (props) => {
 
   return (
     <div>
-      {
+      {/* {
         tileList.map((tile, index) => {
           return < Tile
                     tile={tile}
                     key={index}
                   />
         })
-      }
+      } */}
     </div>
   );
 };

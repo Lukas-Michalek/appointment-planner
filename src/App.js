@@ -48,13 +48,7 @@ const App = () => {
   
   }
     
-    
-
-
-  
-
-  
-   
+ 
 
   // Creating new Appoitnment from data given by user (title, contact, date)
   const addAppointment = (title, contact, date, time) => {
