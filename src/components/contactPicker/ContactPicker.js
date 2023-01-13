@@ -1,18 +1,36 @@
-// import React from "react";
-// import { AppointmentForm } from '../appointmentForm/AppointmentForm'
+import React from "react";
 
-// export const ContactPicker = (props) => {
+export const ContactPicker = (props) => {
+  const { contactList, onChange } = props;
 
-//   const { contacts, handleContactPicked} = props
-
- 
-
-//   return (
+  const handlePickedContact = (event) => {
+    onChange(event.target.value);
     
-//     ContactPicker
+  };
 
+  let contact;
 
+  return (
+    <div>
 
+      <select onChange={handlePickedContact} value={contact}>
+        
+        <option selected="selected" value="">
+          Please Select Contact
+        </option>
 
-//   );
-// };
+        {contactList.map((contact, index) => {
+          return (
+            <option 
+                
+                value={contact} 
+                key={index}
+            >
+              {contact}
+            </option>
+          );
+        })}
+      </select>
+    </div>
+  );
+};

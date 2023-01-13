@@ -16,9 +16,15 @@ export const AppointmentsPage = (props) => {
   const [date, setDate ] = useState('');
   const [time, setTime ] = useState('');
 
+  // Extracts contact from conts array
+
+  
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    
+    
     /*
     Add contact info and clear data  
     */
@@ -29,12 +35,16 @@ export const AppointmentsPage = (props) => {
     setContact('');
     setDate('');
     setTime('');
+
+    
    
   };
 
   
   return (
     <div>
+
+
       <section>
         <h2>Add Appointment</h2>
         < AppointmentForm
@@ -47,6 +57,7 @@ export const AppointmentsPage = (props) => {
               time={time}
               setTime={setTime}
               handleSubmit={handleSubmit}
+              contacts={contacts}
         
         />
       </section>
