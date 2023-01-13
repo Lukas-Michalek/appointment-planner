@@ -3,6 +3,8 @@ import React from "react";
 export const ContactPicker = (props) => {
   const { contactList, onChange } = props;
 
+  // After User selects name from drop down menu, this value is then passed into onChange() method which is exectured in AppointmnetForm.js, where the value chosen is then set as contact name, because AppointmnetForm.js is statefull component
+  
   const handlePickedContact = (event) => {
     onChange(event.target.value);
     

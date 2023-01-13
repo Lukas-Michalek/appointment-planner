@@ -39,6 +39,8 @@ export const AppointmentForm = ({
     return person.name
   })
 
+  
+  
   const handlePickedContact = (onChange) => {
     
     setContact(onChange);
@@ -88,9 +90,6 @@ export const AppointmentForm = ({
         <button type="submit">Submit</button>
 
       </form>
-
-      
-
     </div>
     
   );
