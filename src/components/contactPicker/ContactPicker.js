@@ -1,10 +1,18 @@
-import React from "react";
+// import React from "react";
+// import { AppointmentForm } from '../appointmentForm/AppointmentForm'
 
-export const ContactPicker = () => {
+// export const ContactPicker = (props) => {
 
-  const { contacts, }
+//   const { contacts, handleContactPicked} = props
 
-  return (
-    ContactPicker
-  );
-};
+ 
+
+//   return (
+    
+//     ContactPicker
+
+
+
+
+//   );
+// };

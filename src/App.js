@@ -33,12 +33,13 @@ const App = () => {
   
 
 
-  const addContact = (customerName, phone, email) => {
+  const addContact = (name, email, phone) => {
     
     let newContact = {
-      name: customerName,
-      phone: phone,
-      email: email
+      name: name,
+      email: email,
+      phone: phone
+      
     }   
 
       

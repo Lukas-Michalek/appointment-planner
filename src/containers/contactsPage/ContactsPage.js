@@ -23,10 +23,9 @@ export const ContactsPage = (props) => {
   const [ name, setName ] = useState('');
   const [ email, setEmail ] = useState('');
   const [ phone, setPhone ] = useState('');
-  const [ duplicate, setDuplicate ] = useState(false);
+  // const [ duplicate, setDuplicate ] = useState(false);
 
 
-  const[ wordList, setWordList ] = useState([]);
 
 
   // TODO => *** ALWAYS EXTRACT PROPS AND METHODS PASSED AS PROPS FIRST !!! ***
@@ -47,7 +46,7 @@ export const ContactsPage = (props) => {
     setName('');
     setEmail('');
     setPhone('');
-    setDuplicate(false);
+    // setDuplicate(false);
 
     
     
@@ -84,7 +83,7 @@ export const ContactsPage = (props) => {
       <section>
         <h2>Contacts</h2>
         <TileList
-          contacts = {contacts}
+          tileList = {contacts}   // list of contacts will be passed as props to tileList, which mean that object tileList wil be created with a list of objects that are contact information such as: {"tileList":[{"name":"Luke","email":"email","phone":"123"}]}
            />
       </section>
     </div>

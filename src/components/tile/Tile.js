@@ -4,15 +4,20 @@ export const Tile = (props) => {
 
   const { tile, key } = props;
 
-  // tile => { name: "name", phone: 13459, email="abc@asd"}
-  //  tile => { }
+   // tile => { name: "luke", phone: 13459, email="abc@asd"}
+ 
 
-  const tileValues = Object.values(tile);
+//   const tileValues = Object.values(tile);
+
+   // tile values: ['luke', 13459, 'abc@asd']
+
+  
+   const tileValues = Object.values(tile)
 
   
   return (
     <div className="tile-container">
-      
+            
       {
         tileValues.map((tileValue, index) => {
           if(index === 0){
@@ -22,8 +27,7 @@ export const Tile = (props) => {
             return <p className='tile'>{tileValue}</p>
           }
         })
-      }
-     
+      }    
     </div>
   );
 };

@@ -54,7 +54,7 @@ export const AppointmentsPage = (props) => {
       <section>
         <h2>Appointments</h2>
         <TileList
-          appointments={appointments}
+          tileList={appointments}   // same as with cotacts but it looks like this: {"tileList":[{"title":"App","contact":"","date":"2023-01-13","time":"11:22"}]}
         />
       </section>
     </div>

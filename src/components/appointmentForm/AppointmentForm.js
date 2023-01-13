@@ -1,5 +1,5 @@
 import React from "react";
-import { ContactPicker } from '../contactPicker/ContactPicker'
+// import { ContactPicker } from '../contactPicker/ContactPicker'
 
 export const AppointmentForm = ({
   contacts,
@@ -33,6 +33,10 @@ export const AppointmentForm = ({
     setTime(event.target.value);
   }
 
+  // const handleContactPicked = (event) => {
+  //   setContact(event.target.value)
+  // }
+
   return (
 
     <div>
@@ -64,14 +68,18 @@ export const AppointmentForm = ({
             type='time'
             
         />
+
+        {/* <ContactPicker 
+            contacts = {contacts}
+            onChange={handleContactPicked}    // after user selects name through 'select' element this will be set as value of 'option' and this value(name of contact) will be passed back to appointment form and contact will be added with date, time and title
+      
+        /> */}
+
         <button type="submit">Submit</button>
 
       </form>
 
-      <ContactPicker 
-        contacts = {contacts}
       
-      />
 
     </div>
     
